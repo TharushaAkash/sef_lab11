@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
 import { apiUrl } from "../../../api";
-import fallbackImage from "../../../assets/hero.png";
+import { dishImage, handleImageError } from "../dishImages";
 function DishDetailPage() {
   const { id } = useParams(); // from /dish/:id
   const {data: dish, isLoading, error} = useFetch(apiUrl(`/api/menu/${encodeURIComponent(id)}`));
@@ -14,7 +14,7 @@ function DishDetailPage() {
   return (
     <div className="dish-detail">
       <p>Showing details for dish {dish.name}</p>
-      <img src={dish.image || fallbackImage} alt={dish.name} style={{ width: "500px", height: "300px", objectFit: "cover" }} />
+      <img src={dishImage(dish)} onError={handleImageError} alt={dish.name} style={{ width: "500px", height: "300px", objectFit: "cover" }} />
       <h2>{dish.name}</h2>
       <p>Price: Rs. {dish.price.toFixed(2)}</p>
       <p>Category: {dish.category}</p>

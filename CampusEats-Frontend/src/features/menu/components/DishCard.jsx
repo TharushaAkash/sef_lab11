@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import fallbackImage from "../../../assets/hero.png";
+import { dishImage, handleImageError } from "../dishImages";
 function DishCard({ dish }) {
 
   return (
     <Link to={`/dish/${dish.id}`} className="dish-card-link">
       <div className="dish-card">
-        <img src={dish.image || fallbackImage} alt={dish.name} className="dish-card-image" />
+        <img src={dishImage(dish)} onError={handleImageError} alt={dish.name} className="dish-card-image" />
         <h3>{dish.name}</h3>
         <p>Rs. {dish.price.toFixed(2)}</p>
         <small>{dish.category}</small>
