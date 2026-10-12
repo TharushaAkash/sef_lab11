@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Kottu Roti",
+    "price": 750,
+    "category": "Mains",
+    "available": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Chicken_Kottu.jpg/500px-Chicken_Kottu.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Fried Rice",
+    "price": 850,
+    "category": "Mains",
+    "available": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Cebu_Food_Trip_%2811051504383%29.jpg/960px-Cebu_Food_Trip_%2811051504383%29.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Veg Sub",
+    "price": 600,
+    "category": "Snacks",
+    "available": false,
+    "image": "https://hips.hearstapps.com/hmg-prod/images/vegetarianitaliansub1-1643994462.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"
+  },
+  {
+    "id": 4,
+    "name": "Watalappan",
+    "price": 350,
+    "category": "Dessert",
+    "available": true,
+    "image": "https://www.hungrylankan.com/wp-content/uploads/2025/09/Sri-Lankan-watalappam-3-1152x1536.jpg.webp"
+  },
+  {
+    "id": 5,
+    "name": "Iced Milo",
+    "price": 300,
+    "category": "Drinks",
+    "available": true,
+    "image": "https://static.wixstatic.com/media/8eac57_99e71b99d8ff4c4a85adca8ab3ec5b7f~mv2.jpg/v1/fill/w_925,h_1253,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8eac57_99e71b99d8ff4c4a85adca8ab3ec5b7f~mv2.jpg"
+  }
+]
